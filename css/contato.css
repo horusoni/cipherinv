@@ -1,0 +1,201 @@
+body{
+    
+    background-size: 900px;
+    
+}
+#formulario{
+    padding: 10px 0 20px 0;
+    margin: 0px auto 0 auto;
+    font-family: 'Josefin Sans', sans-serif; 
+    width:100%;
+    text-align: center;
+}
+#formulario h1{
+    color: white;
+}
+
+#formulario div{
+    
+    width: 330px;
+    margin: 10px auto 10px auto;
+    font-size: 19px;
+}
+
+#formulario p{
+    text-align: center;
+    color: white;
+    
+}
+
+#formulario section{
+    background-color: #131313b7;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.contato{
+    color: white;
+    background: none;
+    border: 2px solid darkcyan;
+    outline: none;
+    margin: 3px;
+    height: 40px;
+    width: 335px;
+    font-size: 15px;
+}
+.contato::placeholder{
+    color: rgb(161, 161, 161);
+}
+
+.putmenor{
+    width: 160px;
+}
+textarea{
+    color: white;
+    border: 1px solid darkcyan;
+    background: none;
+    outline: none;
+    width: 335px;
+    font-size: 17px;
+}
+textarea::placeholder{
+    color: rgb(161, 161, 161);
+}
+
+#enviar{
+    width: 335px;
+    font-weight: 600;
+    height: 50px;
+    background: none;
+    color: darkcyan;
+    border: 2px solid darkcyan;
+    font-size: 20px;
+    transition: .1s;
+}
+#enviar:hover{
+    background-color: darkcyan;
+    color: white;
+    
+}
+
+/*animação dos olhos*/
+
+
+#eye-animation-cont{
+    margin: 6% auto 30px auto;
+    width: 140px;
+    position: relative;
+}
+#borda{
+    background:none;
+    width: 140px;
+    height: 45px;
+    border: 3px solid #333333;
+    border-radius: 60%;
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+#palpebra{
+    border-radius: 0;
+    top: -100%;
+    width: 200px;
+    height: 45px;
+    background-color: #247c7c;
+    z-index: 1;
+    position: absolute;
+    animation: fechar 8s infinite ;
+}
+
+#cont-pupila{
+    width: 50px;
+    margin: auto;
+   
+}
+
+#iris{
+    top: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(54, 14, 14);
+    background-image: url(../imagens/mains/circuit.jpg);
+    background-size: 100px;
+    opacity: 0.3;
+    position: absolute;
+    animation: observar 8s infinite forwards;
+}
+
+
+#pupila{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    top:25%;
+    
+}
+
+
+@keyframes fechar {
+    0%{
+        top:-100%
+    }
+    59%{
+        top:-100%;
+    }
+    60%{
+        top: 0;
+    }
+    65%{
+        top: -100%
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+
+
+@keyframes observar {
+    0%{
+        top: 0%;
+        left: 39%;
+    }
+    10%{
+        left: 0%;
+    }
+    40%{
+        left: 0;
+        top: 0%;
+    }
+    
+    45%{
+        
+        top: -50%;
+    }
+    46%{
+        top: -50%;
+    }
+    50%{
+        top:0%;
+        left: 70%;
+    }
+    80%{
+        top: 0%;
+        left: 36%;
+    }
+    90%{
+        top: 0%;
+        left: 32%;
+        
+    }
+
+    
+}

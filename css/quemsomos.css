@@ -1,0 +1,60 @@
+main div{
+    background: none;
+}
+main div .more{
+    background-color: black;
+}
+
+#quem-cont1 {
+    z-index: -1;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    height: 200px;
+    position: relative;
+}
+#quem-cont1 h1{
+    
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    color:darkcyan;
+}
+
+#quem-cont1 p{
+    text-align: right;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 20px;
+
+}
+
+#quem-cont2{
+    background-color: darkcyan;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif; 
+    padding: 20px 0 20px 0;
+    opacity: 0.8;
+    background-size: 900px;
+    background-color: darkcyan;
+}
+
+#quem-cont2 h2{
+    color:white;
+    font-size: 20px;
+    
+}
+
+#quem-cont2 p {
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media(max-width: 600px){
+    #quem-cont1 h1{
+        font-size: 14px ;
+    }
+
+}

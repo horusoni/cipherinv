@@ -1,0 +1,110 @@
+
+.aparelhos{
+    position: fixed;
+    width: 150px;
+    transition: 1.5s;
+    z-index: 1;
+   
+}
+#sendwpp{
+    right: 20px;
+}
+
+
+#camera{
+    top: -100%;
+    left: -100%;
+}
+
+#notebook{
+    left: -200px;
+    bottom: -200px;
+    width: 100px;
+   
+}
+#cel{
+    width: 100px;
+    top: -100%;
+    right: -100%;
+    
+}
+
+/*conteudo*/
+
+.rec-cont{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-family: 'Josefin Sans', sans-serif; 
+   
+}
+
+.rec-cont div{
+    background: none;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto auto auto;
+    background-size: 1600px;
+   
+    
+}
+
+
+.servicos{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+   color: white;
+    margin: 5px auto auto auto;
+    text-align: center;
+    background: rgba(0, 139, 139, 0.582);
+}
+#recurso-cont{
+    width: 200px;
+    margin: auto;
+}
+
+.servicos img{
+    width: 80px;
+}
+
+@media (max-width: 600px){
+    .rec-cont{
+        z-index: -1;
+    }
+
+    .rec-cont div{
+        background: none;
+        width: 80%;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+        
+    
+    }
+
+      .aparelhos{
+            opacity: 0.9;
+            width: 100px;
+        }
+
+        #cel{
+            width: 70px;
+        }
+
+        
+}
